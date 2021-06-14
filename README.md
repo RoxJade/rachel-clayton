@@ -1,59 +1,76 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<img alt=responsive-site src="" width=100%>
 
-Welcome USER_NAME,
+# Rachel Clayton - Print Designer
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+[Visit site Rachel Clayton]()
 
-## Gitpod Reminders
+The aim of the site is to promote and sell prints created by professinal print deisgner, Rachel Clayton. 
+Rachel has many years of expereince as a print and textile lecturer and has developed and curated her own line of abstract screen-printed designs. 
+The site showcases a range of Rachel's work, some information about her and an opportunity to purchase her designs. 
+This is a full stack project and uses a range of technologies including HTML, CSS, JavaScript, Python (Django framework), Stripe and MySQL.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Contents
+- [1. UX](#UX)
+    - [1.1 Target Audience](##Target-Audience)
+    - [1.2 User Stories](#User-Stories)
+    - [1.3 Business Goals](#Business-Goals)
+    - [1.4 Design](#Design)
+    - [1.5 Wireframes](#Wireframes)
+2. [2. Data and Information Architecture](#Data-and-Information-Architecture)
+3. [3. Features](#Features)
+4. [4. Technologies Used](#Technologies-used)
+5. [5. Credits](#Credits)
 
-`python3 -m http.server`
+Testing and Deployment can be found in a separate file:
+[Testing & Deployment]()
 
-A blue button should appear to click: _Make Public_,
+# 1. UX
 
-Another blue button should appear to click: _Open Browser_.
+## 1.1 Target Audience
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## 1.2 User Stories
 
-A blue button should appear to click: _Make Public_,
+**User Stories**
+ - As a user, I would like to be able to navigate around the site easily, with quick access to the shop and gallery.
+ - As a user, I would like to be able to search for prints with particular colours or patterns to suit my taste. 
+ - As a user, I would like to stay informed and updated about the designer's newest pieces and exhibitions by signing up to an email or newsletter.
+ - As a user, I may be interested in requesting a private commission or getting in contact with the designer to ask questions. 
+ - As a user, I would like to view the individual products/print designs and information about them such as, a brief description, price and their dimensions.
+ - As a user, I want to be a able to loacte and access the designer's social media account so I can follow them.
+ - As a consumer, I would like to be able to create my own private account on the site for purchasing products.
+ - As a consumer, I would like to know information about delivery and shipping of the prints. 
+**Returning User Stories**
+ - As a returning consumer, I would like to access my personal account and be able to view my previous purchase history.
+ - within my personal account, I would like to be able to add, edit and delete my personal information. 
+ - As a returning consumer, I would like to know how to return my order if I need to.
+**User Stories - Functionality**
+ - As a user, I want the design of the site to be aesthetically appealing with clear navigation and a sense of calm and colour.
+ - As a user, I expect the site, payment system and my profile to be safe and secure. 
+ - As a user, I want the site to be responsive, for mobile, tablet and desktop.
 
-Another blue button should appear to click: _Open Browser_.
+## 1.3 Business Goals
+Rachel would like to showcase herself as an independent professional designer, specialising in screen printing. 
+She would like a gallery to display her designs and the opportunity to sell them and make a profit. 
+Each print is screen-printed by hand in Rachel's UK-based studio and therefore, unique and individual. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**Business Owner Stories**
+ - As the business owner, I would like a minimalistic approach to site design so the print designs are the focal point.
+ - As the business owner, I would like to appeal to possible project collaborations with other designers. 
+ - As the business owner, I would like my brand to communicate as a professional, independent designer.
+ - As the business owner, I would like to be shown how to add, edit and remove products and their information in order to maintain the site independently, once created.
+ - As the business owner, I would like to receive email confirmations of customer orders.
+ - As the business owner, I would like to be shown how to view and manage customer orders. 
 
-To log into the Heroku toolbelt CLI:
+## 1.4 Design
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## 1.5 Wireframes
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+# 2. Data and Information Architecture
 
-## Updates Since The Instructional Video
+# 3. Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# 4. Technologies Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+# 5. Credits
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
