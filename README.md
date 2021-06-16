@@ -67,6 +67,11 @@ Each print is screen-printed by hand in Rachel's UK-based studio and therefore, 
 
 ## 1.5 Wireframes
 
+The wireframe became quite large so I have created a separate file for these, linked below:
+
+[Wireframes](https://github.com/RoxJade/rachel-clayton/blob/master/wireframes.md)
+
+
 # 2. Data and Information Architecture
 
 ## 2.1 Site Structure
