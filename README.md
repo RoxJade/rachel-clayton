@@ -17,6 +17,8 @@ This is a full stack project and uses a range of technologies including HTML, CS
     - [1.4 Design](#Design)
     - [1.5 Wireframes](#Wireframes)
 2. [2. Data and Information Architecture](#Data-and-Information-Architecture)
+    - [2.1 Site Structure](##Site-Structure)
+    - [2.2 Database ER Diagram](##Database-ER-Diagram)
 3. [3. Features](#Features)
 4. [4. Technologies Used](#Technologies-used)
 5. [5. Credits](#Credits)
@@ -66,6 +68,15 @@ Each print is screen-printed by hand in Rachel's UK-based studio and therefore, 
 ## 1.5 Wireframes
 
 # 2. Data and Information Architecture
+
+## 2.2 Site Structure
+
+<img alt=site-structure src="readme-images/ms4-site-structure.png" width=100%>
+
+## 2.3 Databse ER Diagram
+
+<img alt=er-diagram src="readme-images/ms4-er-diagram.png" width=100%>
+
 
 # 3. Features
 
