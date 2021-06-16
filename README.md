@@ -11,15 +11,15 @@ This is a full stack project and uses a range of technologies including HTML, CS
 
 # Contents
 - [1. UX](#UX)
-    - [1.1 Target Audience](##Target-Audience)
-    - [1.2 User Stories](#User-Stories)
-    - [1.3 Business Goals](#Business-Goals)
+    - [1.1 Target Audience](#1.1-Target-Audience)
+    - [1.2 User Stories](#1.2-User-Stories)
+    - [1.3 Business Goals](#1.3-Business-Goals)
     - [1.4 Design](#Design)
     - [1.5 Wireframes](#Wireframes)
 2. [2. Data and Information Architecture](#Data-and-Information-Architecture)
-    - [2.1 Site Structure](##Site-Structure)
+    - [2.1 Site Structure](#2.1-Site-Structure)
     - [2.2 Database ER Diagram](##Database-ER-Diagram)
-3. [3. Features](#Features)
+3. [3. Features](#3.-Features)
 4. [4. Technologies Used](#Technologies-used)
 5. [5. Credits](#Credits)
 
