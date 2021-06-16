@@ -10,8 +10,8 @@ The site showcases a range of Rachel's work, some information about her and an o
 This is a full stack project and uses a range of technologies including HTML, CSS, JavaScript, Python (Django framework), Stripe and MySQL.
 
 # Contents
-- [1. UX](#1.-UX)
-    - [1.1 Target Audience](#1.1Target-Audience)
+- [1. UX](#1-UX)
+    - [1.1 Target Audience](#1.1-Target-Audience)
     - [1.2 User Stories](#1.2-User-Stories)
     - [1.3 Business Goals](#1.3-Business-Goals)
     - [1.4 Design](#1.4-Design)
@@ -19,9 +19,9 @@ This is a full stack project and uses a range of technologies including HTML, CS
 - [2. Data and Information Architecture](#2.-Data-and-Information-Architecture)
     - [2.1 Site Structure](#2.1-Site-Structure)
     - [2.2 Database ER Diagram](#2.2-Database-ER-Diagram)
-3. [3. Features](#3-Features)
-4. [4. Technologies Used](#Technologies-used)
-5. [5. Credits](#5-Credits)
+- [3. Features](#3-Features)
+- [4. Technologies Used](#4-Technologies-used)
+- [5. Credits](#5-Credits)
 
 Testing and Deployment can be found in a separate file:
 [Testing & Deployment]()
@@ -82,6 +82,6 @@ Each print is screen-printed by hand in Rachel's UK-based studio and therefore, 
 
 # 4. Technologies Used
 
-# Credits
+# 5. Credits
 
 
