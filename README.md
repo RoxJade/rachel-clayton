@@ -11,14 +11,14 @@ This is a full stack project and uses a range of technologies including HTML, CS
 
 # Contents
 - [1. UX](#1-UX)
-- [1.1 Target Audience](#Target-Audience)
-- [1.2 User Stories](#User-Stories)
-- [1.3 Business Goals](#Business-Goals)
-- [1.4 Design](#Design)
-- [1.5 Wireframes](#Wireframes)
+- [Target Audience](#Target-Audience)
+- [User Stories](#User-Stories)
+- [Business Goals](#Business-Goals)
+- [Design](#Design)
+- [Wireframes](#Wireframes)
 - [2. Data and Information Architecture](#2-Data-and-Information-Architecture)
-- [2.1 Site Structure](#Site-Structure)
-- [2.2 Database ER Diagram](#Database-ER-Diagram)
+- [Site Structure](#Site-Structure)
+- [Database ER Diagram](#Database-ER-Diagram)
 - [3. Features](#3-Features)
 - [4. Technologies Used](#4-Technologies-used)
 - [5. Credits](#5-Credits)
@@ -67,6 +67,19 @@ Each print is screen-printed by hand in Rachel's UK-based studio and therefore, 
  - As the business owner, I would like to be shown how to view and manage customer orders. 
 
 ## 1.4 Design
+
+To design the site, I consulted closely with the business owner, Rachel, on all design decisions. 
+She gave me a selection of sites to look at for inspiration including [Jonathan Lawes](https://jonathanlawes.com/), [Lucy Merriman](https://www.lucymerrimanart.com/) and [Georigia Elliott](https://www.georgiaelliottartist.com/).
+She would like the design of the site to be minimal and sophisticated with the emphasis on the products, her print designs. Based on my research, I selected a range of sophisticated fonts and developed a selection of logo designs and a minimal colour palette for Rachel to choose from.
+
+<img alt=logo-and-fonts-1 src="readme-images/ms4-logo-and-fonts-1.png" width=100%>
+
+<img alt=logo-and-fonts-2 src="readme-images/ms4-logo-and-fonts-2.png" width=100%>
+
+<img alt=logo-and-fonts-3 src="readme-images/ms4-logo-and-fonts-3.png" width=100%>
+
+
+
 
 ## 1.5 Wireframes
 
