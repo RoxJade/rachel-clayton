@@ -1,4 +1,4 @@
-# Desktop wireframes
+# Wireframes
 
 ## Home
 <img alt=landing-page src="readme-images/wireframes-desktop/landing-page.png" width=100%>
@@ -35,5 +35,3 @@
 
 ## Order Confirmation
 <img alt=order-confirmation src="readme-images/wireframes-desktop/order-confirmation.png" width=100%>
-
-# Tablet & Mobile
