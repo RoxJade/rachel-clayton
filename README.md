@@ -11,14 +11,14 @@ This is a full stack project and uses a range of technologies including HTML, CS
 
 # Contents
 - [1. UX](#1-UX)
-- [Target Audience](#Target-Audience)
-- [User Stories](#User-Stories)
-- [Business Goals](#Business-Goals)
-- [Design](#Design)
-- [Wireframes](#Wireframes)
+- [1.2 Target Audience](#12-Target-Audience)
+- [1.3 User Stories](#13-User-Stories)
+- [1.4 Business Goals](#14-Business-Goals)
+- [1.5 Design](#15-Design)
+- [1.6 Wireframes](#W16-ireframes)
 - [2. Data and Information Architecture](#2-Data-and-Information-Architecture)
-- [Site Structure](#Site-Structure)
-- [Database ER Diagram](#Database-ER-Diagram)
+- [2.1 Site Structure](#21-Site-Structure)
+- [2.2 Database ER Diagram](#22-Database-ER-Diagram)
 - [3. Features](#3-Features)
 - [4. Technologies Used](#4-Technologies-used)
 - [5. Credits](#5-Credits)
@@ -29,11 +29,11 @@ Testing and Deployment can be found in a separate file:
 Wireframes can also be found in a separate file:
 [Wireframes](https://github.com/RoxJade/rachel-clayton/blob/master/wireframes.md)
 
-# UX
+# 1. UX
 
-## 1.1 Target Audience
+## Target Audience
 
-## 1.2 User Stories
+## User Stories
 
 **User Stories**
  - As a user, I would like to be able to navigate around the site easily, with quick access to the shop and gallery.
@@ -53,7 +53,7 @@ Wireframes can also be found in a separate file:
  - As a user, I expect the site, payment system and my profile to be safe and secure. 
  - As a user, I want the site to be responsive, for mobile, tablet and desktop.
 
-## 1.3 Business Goals
+## Business Goals
 Rachel would like to showcase herself as an independent professional designer, specialising in screen printing. 
 She would like a gallery to display her designs and the opportunity to sell them and make a profit. 
 Each print is screen-printed by hand in Rachel's UK-based studio and therefore, unique and individual. 
@@ -77,9 +77,6 @@ She would like the design of the site to be minimal and sophisticated with the e
 <img alt=logo-and-fonts-2 src="readme-images/ms4-logo-and-fonts-2.png" width=100%>
 
 <img alt=logo-and-fonts-3 src="readme-images/ms4-logo-and-fonts-3.png" width=100%>
-
-
-
 
 ## 1.5 Wireframes
 
