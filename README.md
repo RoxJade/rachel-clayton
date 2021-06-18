@@ -31,9 +31,9 @@ Wireframes can also be found in a separate file:
 
 # 1. UX
 
-## Target Audience
+## 1.2 Target Audience
 
-## User Stories
+## 1.3 User Stories
 
 **User Stories**
  - As a user, I would like to be able to navigate around the site easily, with quick access to the shop and gallery.
@@ -53,7 +53,7 @@ Wireframes can also be found in a separate file:
  - As a user, I expect the site, payment system and my profile to be safe and secure. 
  - As a user, I want the site to be responsive, for mobile, tablet and desktop.
 
-## Business Goals
+## 1.4 Business Goals
 Rachel would like to showcase herself as an independent professional designer, specialising in screen printing. 
 She would like a gallery to display her designs and the opportunity to sell them and make a profit. 
 Each print is screen-printed by hand in Rachel's UK-based studio and therefore, unique and individual. 
@@ -66,7 +66,7 @@ Each print is screen-printed by hand in Rachel's UK-based studio and therefore, 
  - As the business owner, I would like to receive email confirmations of customer orders.
  - As the business owner, I would like to be shown how to view and manage customer orders. 
 
-## 1.4 Design
+## 1.5 Design
 
 To design the site, I consulted closely with the business owner, Rachel, on all design decisions. 
 She gave me a selection of sites to look at for inspiration including [Jonathan Lawes](https://jonathanlawes.com/), [Lucy Merriman](https://www.lucymerrimanart.com/) and [Georigia Elliott](https://www.georgiaelliottartist.com/).
@@ -78,7 +78,7 @@ She would like the design of the site to be minimal and sophisticated with the e
 
 <img alt=logo-and-fonts-3 src="readme-images/ms4-logo-and-fonts-3.png" width=100%>
 
-## 1.5 Wireframes
+## 1.6 Wireframes
 
 The wireframe became quite large so I have created a separate file for these, linked below:
 
@@ -91,7 +91,7 @@ The wireframe became quite large so I have created a separate file for these, li
 
 <img alt=site-structure src="readme-images/ms4-site-structure.png" width=100%>
 
-## 2.2 Databse ER Diagram
+## 2.2 Database ER Diagram
 
 <img alt=er-diagram src="readme-images/ms4-er-diagram.png" width=100%>
 
