@@ -2,6 +2,10 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Raleway', sans-serif;
 background-color: rgba(223, 227, 226, 0.308);
+color: #7E8035; (olive-green)
+color: #FE5F03; (orange)
+color: #8AA0B8; (grey-blue)
+color: #808080; (logo-grey)
 */
 
 html {
@@ -10,10 +14,10 @@ html {
 
 body {
     /*background: url('/media/hero-image.png') no-repeat center center fixed;
-    background-size: cover;*/
-    height: calc(100vh - 164px);
+    background-size: cover;
+    height: calc(100vh - 164px);*/
     background-color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;color: #808080;
 }
 
 /* from Bulma */
@@ -27,17 +31,51 @@ body {
 
 /* ----------------------------------- Logo and Navbar */
 
-li.nav-item::marker {
-    display: none;
-}
-
 .brand-logo {
     width: 400px;
 }
 
-/*.main-logo-link {
-    width: fit-content;
-}*/
+.navbar {
+    padding: 1rem 1.5rem;
+}    
+
+.nav-item {
+    font-size: 1.1em;
+    letter-spacing: .2em;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #808080;
+}
+
+.nav-link:hover {
+    color: #8AA0B8;  
+}
+
+a.dropdown-item {
+    color: #808080;
+}
+
+a.dropdown-item:hover {
+    color: #8AA0B8;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.shopping-bag-icon {
+    padding-bottom: 0;
+}
+
+.fa-shopping-bag {
+    color: #808080;
+}
+
+.fa-shopping-bag:hover{
+    color: #8AA0B8;  
+}
 
 .shop-now-button {
     background: black;
@@ -94,12 +132,13 @@ li.nav-item::marker {
     .header-container {
         padding-top: 164px;
     }
+    
 }
 
 /* Mobile and smaller screens */
 @media only screen and (max-width: 600px) {
     
     .brand-logo {
-        width: 250px;
+        width: 300px;
     }
 }
