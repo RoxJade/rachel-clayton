@@ -31,6 +31,14 @@ body {
 
 /* ----------------------------------- Logo and Navbar */
 
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+    outline: none !important;
+} /* Solved by Cyril! - https://wordpress.org/support/topic/border-around-burger-menu-button/#post-13131740 */
+
+
+
 .brand-logo {
     width: 400px;
 }
@@ -64,6 +72,10 @@ a.dropdown-item:hover {
 .dropdown-toggle::after {
     content: none;
 }
+
+/*.fa-bars:hover{
+    color: #8AA0B8;  
+}*/
 
 .shopping-bag-icon {
     padding-bottom: 0;
