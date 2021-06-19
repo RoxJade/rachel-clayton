@@ -1,6 +1,7 @@
 /* 
 font-family: 'Poppins', sans-serif;
 font-family: 'Raleway', sans-serif;
+background-color: rgba(223, 227, 226, 0.308);
 */
 
 html {
@@ -8,10 +9,10 @@ html {
 }
 
 body {
-    background: url('/media/hero-image.png') no-repeat center center fixed;
-    background-size: cover;
+    /*background: url('/media/hero-image.png') no-repeat center center fixed;
+    background-size: cover;*/
     height: calc(100vh - 164px);
-    color: #555;
+    background-color: white;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -24,13 +25,19 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    font-family: 'Poppins', sans-serif;
+/* ----------------------------------- Logo and Navbar */
+
+li.nav-item::marker {
+    display: none;
 }
 
-.main-logo-link {
-    width: fit-content;
+.brand-logo {
+    width: 400px;
 }
+
+/*.main-logo-link {
+    width: fit-content;
+}*/
 
 .shop-now-button {
     background: black;
@@ -68,6 +75,10 @@ body {
   .container {
     max-width: 80%;
   }
+
+  .brand-logo {
+      width: 500px;
+  }
 }
 
 /* fixed top navbar only on medium and up */
@@ -82,5 +93,13 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* Mobile and smaller screens */
+@media only screen and (max-width: 600px) {
+    
+    .brand-logo {
+        width: 250px;
     }
 }
