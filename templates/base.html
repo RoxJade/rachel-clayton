@@ -129,6 +129,34 @@
     {% block postloadjs %}
     {% endblock %}
 
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted fixed-bottom">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <a href="{% url 'home' %}" class="nav-link navbar-brand">
+                    <img class="brand-logo" src="{{ MEDIA_URL }}media/logo-lg.svg" alt="Rachel Clayton | print">
+                </a>
+            </div>
+            <div>
+                <a class="social-icon" target="_blank" rel="noreferrer" href="https://www.facebook.com/rachel.clayton.988">
+                    <i class="fa fa-facebook" alt="facebook icon"></i>
+                </a>
+                <a class="social-icon" target="_blank" rel="noreferrer" href="https://www.instagram.com/rachelpogoclayton/">
+                    <i class="fa fa-instagram" alt="instagram icon"></i>
+                </a>
+                <a class="social-icon" target="_blank" rel="noreferrer" href="https://www.pinterest.com/">
+                    <i class="fa fa-pinterest" alt="pinterest icon"></i>
+                </a>
+                <a class="social-icon" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/rachel-clayton-194641112/">
+                    <i class="fa fa-linkedin" alt="linkedin icon"></i>
+                </a>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Rachel Clayton
+        </div>
+    </footer>
 
 </body>
 

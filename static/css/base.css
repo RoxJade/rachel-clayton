@@ -20,14 +20,14 @@ body {
     font-family: 'Raleway', sans-serif;color: #808080;
 }
 
-/* from Bulma */
+/* from Bulma 
 .icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
+    height: 2rem;
+    width: 2rem;
+}*/
 
 /* ----------------------------------- Logo and Navbar */
 
@@ -88,6 +88,32 @@ a.dropdown-item:hover {
 .fas:hover{
     color: #8AA0B8;  
 }
+
+/* -------------------------------- Footer */
+
+.footer {
+    padding: 20px;
+}
+
+i.fa {
+   color: #808080;
+}
+
+i.fa:hover {
+   color: #8AA0B8;  
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.social-icon {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+/* -------------------------------- Button styles */
 
 .shop-now-button {
     background: black;
