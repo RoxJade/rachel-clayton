@@ -73,9 +73,9 @@ a.dropdown-item:hover {
     content: none;
 }
 
-/*.fa-bars:hover{
-    color: #8AA0B8;  
-}*/
+.fa-bars:hover {
+    color: #8AA0B8 !important;
+}
 
 .shopping-bag-icon {
     padding-bottom: 0;
@@ -85,7 +85,7 @@ a.dropdown-item:hover {
     color: #808080;
 }
 
-.fa-shopping-bag:hover{
+.fas:hover{
     color: #8AA0B8;  
 }
 
