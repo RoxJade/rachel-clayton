@@ -6,6 +6,7 @@ color: #7E8035; (olive-green)
 color: #FE5F03; (orange)
 color: #8AA0B8; (grey-blue)
 color: #808080; (logo-grey)
+color: #4D4D4D; (dark grey)
 */
 
 html {
@@ -17,10 +18,11 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);*/
     background-color: white;
-    font-family: 'Raleway', sans-serif;color: #808080;
+    font-family: 'Raleway', sans-serif;
+    color: #808080;
 }
 
-/* from Bulma 
+/* from Bulma
 .icon {
     align-items: center;
     display: inline-flex;
@@ -32,7 +34,7 @@ body {
 /* ----------------------------------- Logo and Navbar */
 
 * {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+    -webkit-tap-highlight-color: rgba(236, 12, 12, 0) !important; 
     -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
     outline: none !important;
 } /* Solved by Cyril! - https://wordpress.org/support/topic/border-around-burger-menu-button/#post-13131740 */
@@ -116,7 +118,7 @@ a:hover {
 /* -------------------------------- Button styles */
 
 .shop-now-button {
-    background: black;
+    background: #7E8035;;
     color: white;
     min-width: 260px;
 }
@@ -132,12 +134,8 @@ a:hover {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #8AA0B8;  
     color: white;
-}
-
-.text-black {
-    color: #000 !important;
 }
 
 .border-black {
@@ -159,13 +157,13 @@ a:hover {
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
-    .fixed-top-desktop-only {
+    /*.fixed-top-desktop-only {
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1030;
-    }
+    }*/
 
     .header-container {
         padding-top: 164px;
