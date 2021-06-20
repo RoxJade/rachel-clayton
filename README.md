@@ -100,7 +100,52 @@ The wireframe became quite large so I have created a separate file for these, li
 
 # 4. Technologies Used
 
+- Balsamiq
+- Lucid Chart
+- [SQLite 3]() Django built-in database during development.
+- [Django]() Django python web development framework.
+- Django Allauth - Built-in package from Django that handles full user authentication for the site.
+- [Gunicorn] Web server upon deployment
+- [Postgres] Database used upon deployemnt
+?- [Jinja Templating](https://jinja.palletsprojects.com/en/2.11.x/) Python templating language used.
+- [Font Awesome]() For all site icons
+- [Stripe Payment]()
+- [Amazon Web Services]() - AWS bucket for static file storage
+- [Gitpod and Github](https://github.com/RoxJade/) for version control.
+- [Heroku](https://www.heroku.com/home) Site is deployed on Heroku platform.
+- [Bootstrap]() Frontend framework used to style the site.
+- [JQuery](https://jquery.com/) Javascript functionality to work with Bootstrap.
+- HTML
+- CSS
+- JavaScript
+- [Google fonts](https://fonts.google.com/) and [Google icons](https://fonts.google.com/icons). 
+- [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) Used for the logo design and mockups.
+
+
 # 5. Credits
 
-https://www.codegrepper.com/
+- [Code Grepper](https://www.codegrepper.com/)
+- [BBBootstrap](https://bbbootstrap.com/)
+- [Wordpress support blog](https://wordpress.org/support/topic/border-around-burger-menu-button/#post-13131740)
+- [MD Boostrap](https://mdbootstrap.com/)
+- [Academind Bootstrap Tutorial Series](https://www.youtube.com/watch?v=7g8Gg2QVdeU&list=PL55RiY5tL51rLqH4-8LBVlUTIFF70dxhb) - For refreshers on Bootstrap I followed a YouTube Bootstrap tutorial series
+- [Stack Overflow](https://stackoverflow.com/) - For troubleshooting
+- [Tech with Tim Python Django Tutorial Series](https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9&index=1) - For additional research on Django I followed a YouTube Django Python tutorial series
+- [W3 Schools](https://www.w3schools.com/)
+## Code Institute
+- Dick Vlanderren - My Code Institute Mentor
+- [Slack](https://app.slack.com/) - Code institute support communinty
+- [Code Institute]() - Hello Django & Boutique Ado tutorials
 
+## Media
+All images have been provided by the business owner, Rachel Clayton.
+- [Unsplash](https://unsplash.com/)
+
+## Acknowledgements
+I received inspiration for ideas, colour palette and design of this project from: 
+- [pinterest](https://pinterest.com)
+- [current website trends](https://99designs.co.uk/blog/trends/web-design-trends/)
+- [dribbble](https://dribbble.com/shots/6492236-Balosto?utm_source=Pinterest_Shot&utm_campaign=Podavalkin&utm_content=Balosto&utm_medium=Social_Share).
+- [Jonathan Lawes](https://jonathanlawes.com/)
+- [Lucy Merriman](https://www.lucymerrimanart.com/)
+- [Georigia Elliott](https://www.georgiaelliottartist.com/)
