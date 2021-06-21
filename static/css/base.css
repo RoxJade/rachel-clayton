@@ -117,7 +117,9 @@ a:hover {
     font-size: 1.2rem;
 }
 
-/* -------------------------------- Footer */
+
+
+/* -------------------------------- Product pages */
 
 .overlay {
 	height: 100%;
@@ -127,6 +129,15 @@ a:hover {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+.product-detail-row {
+    padding-top: 50px;
+}
+
+.product-details {
+    margin-top: 200px;
+    padding-left: 30px;
 }
 
 /* -------------------------------- Button styles */
