@@ -105,6 +105,7 @@ The wireframe became quite large so I have created a separate file for these, li
 - [SQLite 3]() Django built-in database during development.
 - [Django]() Django python web development framework.
 - Django Allauth - Built-in package from Django that handles full user authentication for the site.
+- Pillow - to use ImageField in Django database
 - [Gunicorn] Web server upon deployment
 - [Postgres] Database used upon deployemnt
 ?- [Jinja Templating](https://jinja.palletsprojects.com/en/2.11.x/) Python templating language used.
