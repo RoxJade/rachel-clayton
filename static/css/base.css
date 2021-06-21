@@ -14,9 +14,7 @@ html {
 }
 
 body {
-    /*background: url('/media/hero-image.png') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);*/
+    height: calc(100vh - 164px);
     background-color: white;
     font-family: 'Raleway', sans-serif;
     color: #808080;
@@ -95,6 +93,10 @@ a.dropdown-item:hover {
 
 .footer {
     padding: 20px;
+}
+
+.clear {
+    clear: both; height: 60px; 
 }
 
 i.fa {
