@@ -143,28 +143,34 @@ a:hover {
 /* -------------------------------- Button styles */
 
 .shop-now-button {
-    background: #7E8035;;
+    background: #7E8035;
     color: white;
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
-    color: white;
-}
-
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.shop-now-button:focus {
     background: #8AA0B8;  
     color: white;
 }
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.return-button {
+    background: white;
+    color: #808080;
+    min-width: 260px;
+    border: solid 1px #808080;
+}
+
+.return-button:hover,
+.return-button:active,
+.return-button:focus {
+    background: #808080;
+    color: white;
 }
 
 /* -------------------------------- Media Queries */
@@ -203,3 +209,14 @@ a:hover {
         width: 300px;
     }
 }
+
+/* pad the top a bit when navbar is collapsed on mobile */
+/*@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}*/
