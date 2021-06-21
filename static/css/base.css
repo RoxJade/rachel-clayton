@@ -115,6 +115,18 @@ a:hover {
     font-size: 1.2rem;
 }
 
+/* -------------------------------- Footer */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 /* -------------------------------- Button styles */
 
 .shop-now-button {

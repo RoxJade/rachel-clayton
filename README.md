@@ -134,6 +134,7 @@ The wireframe became quite large so I have created a separate file for these, li
 - [Tech with Tim Python Django Tutorial Series](https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9&index=1) - For additional research on Django I followed a YouTube Django Python tutorial series
 - [W3 Schools](https://www.w3schools.com/)
 - [LucidChart Tutorials](https://www.youtube.com/watch?v=-CuY5ADwn24) - A series of 2 tutorials on Entity Relationship Diagrams.
+- [Django Docs](https://docs.djangoproject.com/en/3.2/howto/static-files/) - To learn how to add static image files
 ## Code Institute
 - Dick Vlanderren - My Code Institute Mentor
 - [Slack](https://app.slack.com/) - Code institute support communinty
