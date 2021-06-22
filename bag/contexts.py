@@ -21,9 +21,11 @@ def bag_contents(request):
             'product': product,
         })
 
-    vat = total * Decimal(settings.UK_VAT_PERCENTAGE / 20)
+    vat = total * Decimal(settings.UK_VAT_PERCENTAGE / 100)
 
     grand_total = total + vat
+
+    vat_percentage = grand_total - (vat * 5)
 
     context = {
         'bag_items': bag_items,
@@ -31,6 +33,7 @@ def bag_contents(request):
         'product_count': product_count,
         'vat': settings.UK_VAT_PERCENTAGE,
         'grand_total': grand_total,
+        'vat_percentage': vat_percentage,
     }
 
     return context
