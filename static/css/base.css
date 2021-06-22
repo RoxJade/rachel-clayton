@@ -140,12 +140,16 @@ a:hover {
     padding-left: 30px;
 }
 
+.description-text {
+    font-size: 15px;
+}
+
 /* -------------------------------- Button styles */
 
 .shop-now-button {
     background: #7E8035;
     color: white;
-    min-width: 260px;
+    min-width: 230px;
 }
 
 .shop-now-button:hover,
@@ -162,15 +166,16 @@ a:hover {
 .return-button {
     background: white;
     color: #808080;
-    min-width: 260px;
-    border: solid 1px #808080;
+    min-width: 230px;
+    display: inline;
+    padding: 0;
 }
 
 .return-button:hover,
 .return-button:active,
 .return-button:focus {
-    background: #808080;
-    color: white;
+    background: white;
+    color: #8AA0B8;
 }
 
 .fa-arrow-up {
