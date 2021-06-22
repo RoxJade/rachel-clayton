@@ -1,4 +1,4 @@
-# Problem solving:
+# Problem solving during development
 
 **Navbar**
 
@@ -35,3 +35,15 @@ Then it worked fine across all templates.
 <img alt=logo-issue-products src="readme-images/testing-images/logo-issue-products.png" width=70%>
 <img alt=logo-issue-path src="readme-images/testing-images/logo-issue-path.png" width=30%>
 
+----------
+
+**Creating a view for calculating VAT**
+
+----------
+
+**Small typo that tested a try/exception block**
+
+Whilst creating the 'remove_from_bag' function, I was confronted with an error 500 status, (from the try/except block I had added in the bag view). 
+This acted as a mini-test for my code and describde the error in the terminal as a missing 'forward slash'. I knew that the typo had to exist in the 
+javascript as the post method wasn't working and the error was well described. After searching through, I found and added the missing '/'.
+This accidental mistake tested my try/exception block in the bag views succesfully and helped me to resolve the issue. 
