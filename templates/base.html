@@ -101,14 +101,14 @@
             </ul>
         </div>
         <div class="ml-auto">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black-50{% endif %} nav-link shopping-bag-icon" href="{% url 'view_bag' %}">
+            <a class="{% if grand_total %}text-danger{% else %}text-black-50{% endif %} nav-link shopping-bag-icon" href="{% url 'view_bag' %}">
                 <div class="text-center">
                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                     <p class="my-0">
                         {% if grand_total %}
-                        £{{ grand_total|floatformat:2 }}
+                            £{{ grand_total|floatformat:2 }}
                         {% else %}
-                        £0.00
+                            £0.00
                         {% endif %}
                     </p>
                 </div>
