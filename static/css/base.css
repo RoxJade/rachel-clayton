@@ -173,6 +173,10 @@ a:hover {
     color: white;
 }
 
+.fa-arrow-up {
+    font-size: 1.5rem;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
