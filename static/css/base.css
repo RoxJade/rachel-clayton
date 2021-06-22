@@ -122,8 +122,6 @@ a:hover {
     font-size: 1.2rem;
 }
 
-
-
 /* -------------------------------- Product pages */
 
 .overlay {
@@ -185,6 +183,11 @@ a:hover {
 
 .fa-arrow-up {
     font-size: 1.5rem;
+}
+
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 /* -------------------------------- Media Queries */
