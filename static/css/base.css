@@ -132,11 +132,11 @@ a:hover {
 }
 
 .product-detail-row {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .product-details {
-    margin-top: 200px;
+    margin-top: 25px;
     padding-left: 30px;
 }
 
@@ -208,6 +208,10 @@ a:hover {
     .brand-logo {
         width: 300px;
     }
+
+    .product-details {
+    margin-top: 0px;
+}
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
