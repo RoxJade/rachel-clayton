@@ -122,6 +122,36 @@ a:hover {
     font-size: 1.2rem;
 }
 
+/* -------------------------------- Toast messages */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+.success-olive {
+    background-color: #7E8035;
+}
+
+.info-blue {
+    background-color: #8AA0B8;
+}
+
+.error-orange {
+    background-color: #FE5F03; 
+}
+
+
 /* -------------------------------- Product pages */
 
 .overlay {
