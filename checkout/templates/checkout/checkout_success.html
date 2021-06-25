@@ -67,7 +67,7 @@
                              <p class="font-weight-light small">-Size{{ item.product.size }}</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="font-weight-bold mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
+                            <p class="font-weight-bold mb-0">{{ item.quantity }} @ £{{ item.product.price }} each</p>
                         </div>
                     </div>
                     {% endfor %}
@@ -210,6 +210,16 @@
                 <a href="#" class="shop-now-button btn rounded btn-md">
                     <span class="text-uppercase">Delivery & Returns</span>
                 </a>
+                {% if from_profile %}
+                <h2 class="float-left">
+				    <a href="{% url 'profile' %}" class="btn btn-sm return-button rounded mt-5">
+				        <span class="icon">
+				            <i class="fas fa-chevron-left"></i>
+				        </span>
+				        <span class="text-uppercase">View Order</span>
+				    </a>
+                </h2>
+                {% else %}
 				<h2 class="float-left">
 				    <a href="{% url 'products' %}" class="btn btn-sm return-button rounded mt-5">
 				        <span class="icon">
@@ -217,7 +227,8 @@
 				        </span>
 				        <span class="text-uppercase">Continue Browsing</span>
 				    </a>
-				</h2>
+                </h2>
+                {% endif %}
 			</div>
 		</div>
     </div>

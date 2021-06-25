@@ -1,3 +1,4 @@
+
 /*
     Core logic/payment flow for this comes from here:
     https://stripe.com/docs/payments/accept-a-payment
@@ -27,7 +28,6 @@ var style = {
 var card = elements.create('card', {style: style});
 card.mount('#card-element');
 
-
 // Handle realtime validation errors on the card element
 card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
@@ -44,7 +44,7 @@ card.addEventListener('change', function (event) {
     }
 });
 
-// Handle from submit
+// Handle form submit
 var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
@@ -64,7 +64,7 @@ form.addEventListener('submit', function(ev) {
     };
     var url = '/checkout/cache_checkout_data/';
 
-    $.post(url, postData).done(function() {
+    $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
                 card: card,
