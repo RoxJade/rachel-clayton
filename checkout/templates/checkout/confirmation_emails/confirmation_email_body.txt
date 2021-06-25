@@ -1,0 +1,26 @@
+Hello {{ order.full_name }}!
+
+This is a confirmation of your order from Rachel. Thank you for purchasing one my Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: £{{ order.order_total }}
+VAT: £{{ order.vat }}
+Delivery: Free
+Grand Total: @{{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+We've got your phone number on file as {{ order.phone_number }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+The prints can be seen in multi-directions. I have showcased them on the site the way I have created and perceived the work, but you may like to see the work your way! 
+It would be lovely to see your new artwork wherever you decide to display it, feel free to send an image of the work displayed in your space and I'll add it to my site gallery!
+
+Thank you for your order, I hope you enjoy your new beautiful print! 
+
+Sincerely,
+
+Rachel Clayton
