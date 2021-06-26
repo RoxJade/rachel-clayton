@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from newsletter.forms import EmailSignupForm
 
 # Create your views here.
 
@@ -6,4 +7,10 @@ from django.shortcuts import render
 def index(request):
     """ A view to return the index page """
 
-    return render(request, 'home/index.html')
+    form = EmailSignupForm()
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'home/index.html', context)
