@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <!--<div class="container header-container">
+    <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
-    </div>-->
+    </div>
 {% endblock %}
 
     {% block content %}
@@ -15,8 +15,8 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h3 class="font-weight-light title-font mb-4">Drop me a line!</h3>
-                <h5 class="font-weight-light title-font mb-4">Please get in touch if you are interested in commissions, collaborations or you just have question you'd like answered.</h5>
+                <h3 class="font-weight-bold title-font mb-4">Drop me a line</h3>
+                <p class="font-weight-light title-font mb-4">Please get in touch if you are interested in commissions, collaborations or you just have question you'd like answered.</p>
                 <hr>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="col-12 col-md-6">
                 <form method="POST" action="{% url 'contact' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
-                        
+                    {{ form|crispy }}
                     <div class="text-right">
                         <a href="{% url 'products' %}" class="btn btn-md text-danger mr-3">
                             <span class="icon">
@@ -33,7 +33,7 @@
                             </span>
                             <span>Cancel</span>
                         </a>
-                        <button class="rounded shop-now-button btn btn-md py-auto float-right" type="submit">Add Product</button>
+                        <button class="rounded shop-now-button btn btn-md py-auto float-right" type="submit">Submit</button>
                     </div>
                 </form>
             </div>            

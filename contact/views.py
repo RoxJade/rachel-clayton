@@ -1,27 +1,30 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
-from django.core.mail import send_mail
 
 # Create your views here.
 
 from .forms import ContactForm
 
+
 def contact(request):
     """ A view to return the contact page and form """
 
+    form = ContactForm(request.POST or None)
     if request.method == "POST":
-        message_name = request.POST['message-name']
-        message_email = request.POST['message-email']
-        message_subject = request.POST['message-subject']
-        message = request.POST['message']
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Your message has sent, \
+                we'll get back to you shortly.")
+        else:
+            messages.error(request, "Sorry, your message did not send this time, \
+                please try again.")
 
-        send_mail(
-            message_name,
-            message_email,
-            message_subject,
-            message,
+        return redirect(reverse('contact'))
+    else:
+        form = ContactForm()
 
-            ['roxannejade853@gmail.com']
-        )
-
-        return render(request, 'contact.html')
+    template = 'contact/contact.html'
+    context = {
+        'form': form,
+    }
+    return render(request, template, context)

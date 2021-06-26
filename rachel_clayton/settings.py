@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'newsletter',
-    'contact'
+    'contact',
 
     # Other
     'crispy_forms',
@@ -184,13 +184,15 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'rachelclayton@example.com'
 
+# Mailchimp for newsletter signup
 MAILCHIMP_API_KEY = os.getenv('MAILCHIMP_API_KEY', '')
 MAILCHIMP_DATA_CENTER = os.getenv('MAILCHIMP_DATA_CENTER', '')
 MAILCHIMP_EMAIL_LIST_ID = os.getenv('MAILCHIMP_EMAIL_LIST_ID', '')
 
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = '1025'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
-EMAIL_USE_SSL = False
+# For user email 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'roxannejade853@gmail.com'
+EMAIL_HOST_PASSWORD = 'ymkgdpkepqtnmlpz'
+EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = False
