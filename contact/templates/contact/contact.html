@@ -15,7 +15,8 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h3 class="font-weight-bold title-font mb-4">Drop me a line</h3>
+                <h3 class="font-weight-bold title-font mb-4 d-none d-lg-block">Drop me a line</h3>
+                <h5 class="font-weight-bold title-font mb-2 d-lg-none">Drop me a line</h5>
                 <p class="font-weight-light title-font mb-4">Please get in touch if you are interested in commissions, collaborations or you just have question you'd like answered.</p>
                 <hr>
             </div>
@@ -23,7 +24,7 @@
 
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'contact' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'contact' %}" class="form mb-5" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-right">

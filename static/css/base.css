@@ -49,6 +49,7 @@ body {
 
 .navbar {
     padding: 1rem 1.5rem;
+    align-items: start;
 }    
 
 .nav-item {
@@ -223,19 +224,6 @@ a:hover {
     cursor: pointer;
 }
 
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-
-  .brand-logo {
-      width: 500px;
-  }
-}
-
 /* -------------------------------- Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -318,6 +306,18 @@ a:hover {
     border-radius: 0;
 }
 
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .brand-logo {
+      width: 500px;
+  }
+}
 
 /* -------------------------------- fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -327,24 +327,82 @@ a:hover {
         right: 0;
         left: 0;
         z-index: 1030;
-    }*/
+    }
 
     .header-container {
         padding-top: 164px;
-    }
+    }*/
     
 }
 
-/* Mobile and smaller screens */
+/*  Smaller screens and large Mobile*/
 @media only screen and (max-width: 600px) {
     
     .brand-logo {
         width: 300px;
     }
 
+        .nav-link {
+        padding: 0;
+    }
+
+    .navbar {
+        padding: .5rem .75rem;
+    }
+
     .product-details {
     margin-top: 0px;
+    }
 }
+
+/* Small mobile screens */
+@media only screen and (max-width: 400px) {
+
+    body {
+        height: calc(100vh - 116px);
+        font-size: .8rem;
+    }
+
+    .brand-logo {
+        width: 270px;
+    }
+
+    .nav-link {
+        padding: .1rem;
+    }
+
+    .navbar {
+        padding: .5rem .7rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .nav-item {
+    font-size: 1rem;
+    letter-spacing: .2em;
+    margin-right: 20px;
+    }
+
+    .product-details {
+    margin-top: 0px;
+    }
+
+    .product-detail-row {
+        padding-top: 0px;
+    }
+
+    .title-font {
+    letter-spacing: 0;
+    }
+
+    .social-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: .9rem;
+    }
+
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -357,3 +415,4 @@ a:hover {
         height: calc(100vh - 116px);
     }
 }*/
+
