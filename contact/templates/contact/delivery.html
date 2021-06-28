@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block content %}
+
+    <!-- Delivery and Returns (large and XL screens) -->
+    <hr class="w-75 my-5">
+    </hr>
+    <div class="container-sm bg-light pt-5 pb-0">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 text-center">
+                <h1 class="font-weight-light title-font mb-4">Delivery and Returns</h1>
+                <hr class="w-75 my-5">
+                </hr>
+                <p class="mt-3 font-weight-bold title-font">
+                    <lead>Delivery</lead>
+                </p>
+                <p class="font-weight-light">I currently only deliver to the UK, all delivery costs are free for
+                    customers.
+                    COVID UPDATE : Due to COVID 19 related restrictions some orders are
+                    experiencing delays in the postal service. Please be patient and rest assured your parcel will
+                    arrive as soon as possible.
+                    All artworks are dispatched within 3-5 working days. Orders are sent via 1st class signed for
+                    delivery.</p>
+                <hr class="w-75 my-5">
+                </hr>
+                <p class="mt-3 font-weight-bold title-font">Returns</p>
+                <p class="font-weight-light">I hope you love your original art piece or print as much as I do, but in
+                    the unlikely event that you are not satisfied with your artwork(s), you can cancel your purchase and
+                    receive a full refund (minus P&P charges). To qualify for a refund, the print(s) must be sent back
+                    to Rachel Clayton in their original condition and protective packaging within 14 days of receiving
+                    your order. These terms and conditions do not affect your statutory rights as a consumer.
+                </p>
+                <p class="font-weight-light mb-5"><strong>To arrange a refund, simply go to our <a
+                            href="{% url 'contact' %}">contact page</a> and send a message labelled 'Return', within 14
+                        days and we can arrange an exchange or
+                        return. </strong>
+            </div>
+        </div>
+    </div>
+    <hr class="w-75 my-5 d-none d-lg-block">
+    </hr>
+{% endblock %}

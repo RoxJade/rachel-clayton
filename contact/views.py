@@ -28,3 +28,9 @@ def contact(request):
         'form': form,
     }
     return render(request, template, context)
+
+
+def delivery(request):
+    """ A view to return the delivery and returns page """
+
+    return render(request, 'contact/delivery.html')
