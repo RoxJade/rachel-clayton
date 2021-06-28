@@ -1,0 +1,1 @@
+web: gunicorn rachel_clayton.wsgi:application
