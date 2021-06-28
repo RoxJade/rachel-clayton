@@ -101,7 +101,7 @@ The wireframe became quite large so I have created a separate file for these, li
 # 4. Technologies Used
 
 - Balsamiq
-- Lucid Chart
+- [Lucid Chart](https://www.lucidchart.com/) to create Database ER diaram and site structure.
 - [SQLite 3]() Django built-in database during development.
 - [Django]() Django python web development framework.
 - Django Allauth - Built-in package from Django that handles full user authentication for the site.
@@ -112,30 +112,38 @@ The wireframe became quite large so I have created a separate file for these, li
 - [Font Awesome]() For all site icons
 - [Stripe Payment]()
 - [Amazon Web Services]() - AWS bucket for static file storage
+- [Mailchimp](https://mailchimp.com/) API used to setup Newsletter subcription feature.
 - [Gitpod and Github](https://github.com/RoxJade/) for version control.
 - [Heroku](https://www.heroku.com/home) Site is deployed on Heroku platform.
 - [Bootstrap]() Frontend framework used to style the site.
-- [JQuery](https://jquery.com/) Javascript functionality to work with Bootstrap.
+- [Javascript/JQuery](https://jquery.com/) Javascript functionality to work with Bootstrap.
 - HTML
 - CSS
-- JavaScript
 - [Google fonts](https://fonts.google.com/) and [Google icons](https://fonts.google.com/icons). 
 - [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) Used for the logo design and mockups.
 
 
 # 5. Credits
 
+**For hints, help, guidance and small bug fixes I used:**
 - [Code Grepper](https://www.codegrepper.com/)
 - [BBBootstrap](https://bbbootstrap.com/)
 - [Wordpress support blog](https://wordpress.org/support/topic/border-around-burger-menu-button/#post-13131740)
 - [MD Boostrap](https://mdbootstrap.com/)
-- [Academind Bootstrap Tutorial Series](https://www.youtube.com/watch?v=7g8Gg2QVdeU&list=PL55RiY5tL51rLqH4-8LBVlUTIFF70dxhb) - For refreshers on Bootstrap I followed a YouTube Bootstrap tutorial series
+- [W3 Schools](https://www.w3schools.com/)
+- [Bootrap 4 Docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+- [Tango with Django](https://tango-with-django.readthedocs.io/en/latest/chapters/models.html)
+- [Django Docs](https://docs.djangoproject.com/en/3.2/) - To learn how to add static image files, send emails and check fields when adding data models.
+- [Academind Bootstrap Tutorial Series](https://www.youtube.com/watch?v=7g8Gg2QVdeU&list=PL55RiY5tL51rLqH4-8LBVlUTIFF70dxhb)
+
+**For help with the creation of the 2 additional models in my database, (Newsletter and Contact features), I used:**
+-[Just Django - YouTube tutorial](https://www.youtube.com/watch?v=2KeV42YaPes)
+
 - [Stack Overflow](https://stackoverflow.com/) - For troubleshooting
 - [Tech with Tim Python Django Tutorial Series](https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9&index=1) - For additional research on Django I followed a YouTube Django Python tutorial series
-- [W3 Schools](https://www.w3schools.com/)
 - [LucidChart Tutorials](https://www.youtube.com/watch?v=-CuY5ADwn24) - A series of 2 tutorials on Entity Relationship Diagrams.
-- [Django Docs](https://docs.djangoproject.com/en/3.2/howto/static-files/) - To learn how to add static image files
-## Code Institute
+
+**Code Institute**
 - Dick Vlanderren - My Code Institute Mentor
 - [Slack](https://app.slack.com/) - Code institute support communinty
 - [Code Institute]() - Hello Django & Boutique Ado tutorials
