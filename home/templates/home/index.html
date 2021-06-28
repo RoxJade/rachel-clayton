@@ -86,7 +86,6 @@
 
 <!-- Newsletter Signup -->
 <div class="container bg-light p-4 pb-0">
-    <form action="{% url 'email_list_signup' %}">
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="font-weight-light title-font ">Sign up to the mailing list</h2>
@@ -99,16 +98,16 @@
                     <form action="{% url 'email_list_signup' %}" method="POST">
                         {% csrf_token %}
                         {{ form|crispy }}
+                        <div class="mb-4 mb-md-0 text-center">
+                            <button type="submit" class="btn btn-secondary mb-4 ">
+                                Subscribe
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="col-auto mb-4 mb-md-0">
-                <button type="submit" class="btn btn-secondary mb-4">
-                    Subscribe
-                </button>
-            </div>
+            
         </div>
-    </form>
 </div>
        
 {% endblock %}
