@@ -2,31 +2,27 @@
 {% load static %}
 
     {% block content %}
+
+    <!-- About Rachel-->
     <div class="overlay"></div>
-    <!-- About -->
-        <div class="container-fluid">
-        <div class="row product-detail-row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}rach_about.png" alt="picture of Rachel Clayton">
-                </div>
+    <hr class="w-75 my-3"></hr>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-lg-10 offset-lg-1">
+                <img class="w-100" src="{{ MEDIA_URL }}rach.png" alt="picture of Rachel Clayton">
             </div>
-            <div class="product-details col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <h3 class="mb-0 mt-4 font-weight-bold title-font d-none d-lg-block">Screen Printer and Artist</h3>
-                    <h5 class="font-weight-bold title-font mb-2 d-lg-none">Screen Printer and Artist</h5>
-                    <p class="lead mt-3 mb-0 text-left">Rachel is a screen printer and artist based in Bristol. After
-                        graduating with a BA (Hons) in Printed Textiles and the Decorative Arts from Middlesex
-                        University, she then worked as a freelance textile designer for a few years. It was after this
-                        that she decided to move towards more personal pieces of work created on wood, paper, and
-                        acrylic. 
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-            <div class="col-12 col-lg-8 offset-lg-2">
-                <p>Alongside working as an artist and designer, Rachel has been a lecturer in both further
-                    and higher education for twenty years. Her work is inspired by geometric shapes and pattern
+        </div>
+        <hr class="my-3"></hr>
+        <div class="row mt-5">
+            <div class="col-lg-10 offset-lg-1">
+                <p><strong>Rachel is a screen printer and artist based in Bristol.</strong> After
+                    graduating with a BA (Hons) in Printed Textiles and the Decorative Arts from Middlesex
+                    University, she then worked as a freelance textile designer for a few years. It was after this
+                    that she decided to move towards more personal pieces of work created on wood, paper, and
+                    acrylic. Alongside working as an artist and designer, Rachel has been a lecturer in both further
+                    and higher education for twenty years.
+                </p>
+                <p class="mt-3"> Her work is inspired by geometric shapes and pattern
                     found in her surrounding environment, and she has a strong fascination for colour and texture.
                     Her work often has a textile link through the use of surface and the relationships with shapes.
                     Rachel is drawn to architecture and the industrial landscape, which is often where her creative
@@ -37,43 +33,44 @@
                     the need to insert a particular texture or image.
                     From conception of idea to the initial drawing and mark making stages, then the creation of
                     positive imagery onto screens, onto the actual printing process; each screen print can take days
-                    to produce. Each piece of work is an original.
+                    to produce. Each piece of work is unique in it's own way.
+                </p>
+                <p class="mt-3"><strong>If you would like to get in touch about purchasing work, potential projects, collaborations, or private
+                    commissions please send a message in the form below and I will respond within 48 hours.
+                    Follow me on social media via the links below.</strong>
                 </p>
             </div>
         </div>
-        </div>
-    </div> 
-
+    </div>
+    <hr class="w-75 my-5"></hr>
 
     <!-- Contact Form -->
-    <div class="container">
+    <div class="container-sm bg-light pt-5 pb-0">
         <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <!-- Large & Xl screen size title -->
-                <h3 class="font-weight-bold title-font mb-4 d-none d-lg-block">Drop me a line</h3>
-                <!-- Med & Small screen size title -->
-                <h5 class="font-weight-bold title-font mb-2 d-lg-none">Drop me a line</h5>
-                <p class="font-weight-light title-font mb-4">Please get in touch if you are interested in commissions, collaborations or you just have question you'd like answered.</p>
+            <div class="col-12 col-md-6 offset-md-3 text-center">
+                <h2 class="font-weight-light title-font mb-4">Drop me a line</h2>
+                
+                <p class="font-weight-light mb-4">Please get in touch if you are interested in commissions, collaborations or you just have question you'd like answered.</p>
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 offset-md-3">
                 <form method="POST" action="{% url 'contact' %}" class="form mb-5" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-right">
-                        <a href="{% url 'products' %}" class="btn btn-md text-danger mr-3">
+                        <a href="{% url 'products' %}" class="btn btn-md text-secondary mr-3">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
                             </span>
-                            <span>Cancel</span>
+                            <span>All Prints</span>
                         </a>
-                        <button class="rounded shop-now-button btn btn-md py-auto float-right" type="submit">Submit</button>
+                        <button class="btn btn-secondary mb-4" type="submit">Send message</button>
                     </div>
                 </form>
             </div>            
         </div>
     </div>
+    <hr class="w-75 my-5"></hr>
 {% endblock %}
