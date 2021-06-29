@@ -27,7 +27,7 @@
                     {% if product.in_stock %}
                     <p class="text-muted mt-3">In Stock</p>
                     {% else %}
-                    <p class="text-muted mt-3">Sold</p>
+                    <p class="text-muted mt-3">Sold Out</p>
                     {% endif %}
                     {% if request.user.is_superuser %}
                     <small>
@@ -36,6 +36,7 @@
                     </small>
                     {% endif %}
 
+                    {% if product.in_stock %}
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
@@ -52,6 +53,7 @@
                                     <h4>
                                         <input type="submit" class="shop-now-button btn btn-md rounded py-auto" value="Add to Cart">
                                     </h4>
+                                    {% else %}
                                     <h4>
                                         <a href="{% url 'products' %}" class="btn btn-sm return-button rounded mt-5">
                                             <span class="icon">
@@ -60,6 +62,7 @@
                                             <span class="text-uppercase">Keep Shopping</span>
                                         </a>
                                     </h4>
+                                    {% endif %}
                                 </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
