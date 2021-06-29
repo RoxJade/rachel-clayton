@@ -33,7 +33,6 @@ def email_list_signup(request):
     form = EmailSignupForm(request.POST or None)
 
     if request.method == "POST":
-        print('processing Signup')
         if form.is_valid():
             email_signup_qs = Signup.objects.filter(email=form.instance.email)
             if email_signup_qs.exists():

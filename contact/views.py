@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.core.mail import send_mail
+from django.conf import settings
 
 # Create your views here.
 
@@ -13,6 +15,17 @@ def contact(request):
     if request.method == "POST":
         if form.is_valid():
             form.save()
+            message = request.POST['message']
+            subject = request.POST['subject']
+            email = request.POST['email']
+
+            send_mail(
+                subject,
+                message,
+                email,
+                ['roxannejade88@icloud.com'],
+                fail_silently=False)
+
             messages.success(request, "Your message has sent, \
                 we'll get back to you shortly.")
         else:

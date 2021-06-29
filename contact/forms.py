@@ -17,7 +17,7 @@ class ContactForm(forms.ModelForm):
             'full_name': 'Full Name',
             'email': 'Email Address',
             'subject': 'Subject',
-            'message': 'Message',
+            'message': 'Message - Please provide the best way to contact you',
         }
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
