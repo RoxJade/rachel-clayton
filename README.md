@@ -1,8 +1,8 @@
-<img alt=responsive-site src="" width=100%>
+<img alt=responsive-site src="readme-images/rach-responsive.png" width=100%>
 
 # Rachel Clayton - Print Designer
 
-[Visit site Rachel Clayton]()
+[Visit site Rachel Clayton](https://rachel-clayton.herokuapp.com/)
 
 The aim of the site is to promote and sell prints created by professinal print deisgner, Rachel Clayton. 
 Rachel has many years of expereince as a print and textile lecturer and has developed and curated her own line of abstract screen-printed designs. 
@@ -49,19 +49,27 @@ I would like my brand to communicate as a professional, independent designer.
 
 ## 1.4 Design
 
-To design the site, I consulted closely with the business owner, Rachel, on all design decisions. 
+To design the site, I consulted closely with the business owner, Rachel, on all design decisions. Rachel chose the logo and typeface from the selection of designs below, she also advised on the colour palette she wanted. 
 She gave me a selection of sites to look at for inspiration including [Jonathan Lawes](https://jonathanlawes.com/), [Lucy Merriman](https://www.lucymerrimanart.com/) and [Georigia Elliott](https://www.georgiaelliottartist.com/).
-She would like the design of the site to be minimal and sophisticated with the emphasis on the products, her print designs. Based on my research, I selected a range of sophisticated fonts and developed a selection of logo designs and a minimal colour palette for Rachel to choose from.
+She would like the design of the site to be minimal and sophisticated with the emphasis on the products, her print designs.
+
+<img alt=logo-and-fonts-final src="readme-images/ms4-logo-and-font-final.png" width=100%>
+
+------------------
 
 <img alt=logo-and-fonts-1 src="readme-images/ms4-logo-and-fonts-1.png" width=100%>
 
+------------------
 <img alt=logo-and-fonts-2 src="readme-images/ms4-logo-and-fonts-2.png" width=100%>
 
+------------------
 <img alt=logo-and-fonts-3 src="readme-images/ms4-logo-and-fonts-3.png" width=100%>
+
+------------------
 
 ## 1.5 Wireframes
 
-The wireframe became quite large so I have created a separate file for these, linked below:
+The wireframe file is large so I have created a separate file for these, linked below:
 
 [Wireframes](https://github.com/RoxJade/rachel-clayton/blob/master/wireframes.md)
 
@@ -171,34 +179,55 @@ All of my static and media files are hosted in the AWS S3 Bucket. To do this, I 
 
 # 5. Technologies Used
 
-- [Balsamiq](https://balsamiq.com/) for [wireframes](https://github.com/RoxJade/rachel-clayton/blob/master/wireframes.md) 
-- [Lucid Chart](https://www.lucidchart.com/) to create Database ER diaram and site structure.
-- [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) for logo design, font selections and colour.
-- [Django](https://www.djangoproject.com/) Django python web development framework.
-- SQLite 3 Django default built-in database during development.
-- Django Allauth - Built-in package from Django that handles full user authentication for the site.
-- Pillow - to use 'ImageField' in Django database
-- gunicorn - web server upon deployment
-- dj_database_url - to change to Postgres database for deployment.
-- [Postgres] Database used upon deployemnt
-?- [Jinja Templating](https://jinja.palletsprojects.com/en/2.11.x/) Python templating language used.
-- [Font Awesome]() For all site icons
-- [Stripe Payment]()
-- [Amazon Web Services](https://aws.amazon.com/) - AWS S3 bucket for media and static file storage.
-- [Mailchimp](https://mailchimp.com/) API used to setup Newsletter subcription feature.
-- [Gitpod and Github](https://github.com/RoxJade/) for version control.
-- [Heroku](https://www.heroku.com/home) Site is deployed on Heroku platform.
-- [Bootstrap]() Frontend framework used to style the site.
-- [Javascript/JQuery](https://jquery.com/) Javascript functionality to work with Bootstrap.
-- HTML
-- CSS
-- [Google fonts](https://fonts.google.com/) and [Google icons](https://fonts.google.com/icons). 
+### **Site Design and Structure:**
+- [**Balsamiq**](https://balsamiq.com/) for [wireframes](https://github.com/RoxJade/rachel-clayton/blob/master/wireframes.md) 
+- [**Lucid Chart**](https://www.lucidchart.com/) to create Database ER diaram and site structure.
+- [**Adobe Illustrator**](https://www.adobe.com/uk/products/illustrator.html) for logo design, font selections and colour.
 
+### **Django and additional installed packages:**
+- [**Django**](https://www.djangoproject.com/) Django python web development framework.
+    - **SQLite3** Django default built-in database during development.
+    - **Django Allauth** - Built-in package from Django that handles full user authentication for the site.
+    - **Pillow** - to use 'ImageField' in Django database
+    - **gunicorn** - web server upon deployment
+    - **dj_database_url** - to change to Postgres database for deployment.
+    - **crispy-forms** - for forms and validation
+    - **psycopg2-binary** - for database adaption to Postgres
 
+### **Site Development:**
+- [**Gitpod and Github**](https://github.com/RoxJade/) IDE, Git version control and repository.
+- [**Heroku**](https://www.heroku.com/home) Site is deployed on Heroku platform.
+- **Heroku Postgres** Database used upon deployment
+- **HTML**
+- **CSS**
+- [**Bootstrap**]() Frontend framework used to style the site.
+- [**Javascript/JQuery**](https://jquery.com/) Javascript functionality to work with Bootstrap.
+- [**Font Awesome**](https://fontawesome.com/) For all site icons
+- [**Google fonts**](https://fonts.google.com/) and [**Google icons**](https://fonts.google.com/icons). 
+
+### **API's:**
+- [**Stripe Payment**](https://stripe.com/) - API used for user transactions.
+- [**Amazon Web Services**](https://aws.amazon.com/) - AWS S3 bucket for media and static file storage.
+- [**Mailchimp**](https://mailchimp.com/) API used to setup Newsletter subcription feature.
 
 # 6. Credits
 
+## Acknowledgements
+- **Rachel Clayton**, the business owner and artist, who provided all images of her print designs and site content.
+
+I received inspiration for ideas, colour palette and design of this project from: 
+- [Georigia Elliott](https://www.georgiaelliottartist.com/)
+- [dribbble](https://dribbble.com/shots/6492236-Balosto?utm_source=Pinterest_Shot&utm_campaign=Podavalkin&utm_content=Balosto&utm_medium=Social_Share).
+- [Jonathan Lawes](https://jonathanlawes.com/)
+- [Lucy Merriman](https://www.lucymerrimanart.com/)
+
+**Code Institute**
+- **Dick Vlanderren - My Code Institute Mentor**
+- [Slack](https://app.slack.com/) - Code institute support communinty
+- [Code Institute]() - Tutor Assistance Team and tutorials, Hello Django & Boutique Ado
+
 **For hints, help, guidance and small bug fixes I used:**
+- [Stack Overflow](https://stackoverflow.com/) - For troubleshooting
 - [Code Grepper](https://www.codegrepper.com/)
 - [BBBootstrap](https://bbbootstrap.com/)
 - [Wordpress support blog](https://wordpress.org/support/topic/border-around-burger-menu-button/#post-13131740)
@@ -206,30 +235,17 @@ All of my static and media files are hosted in the AWS S3 Bucket. To do this, I 
 - [W3 Schools](https://www.w3schools.com/)
 - [Bootrap 4 Docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 - [Tango with Django](https://tango-with-django.readthedocs.io/en/latest/chapters/models.html)
-- [Django Docs](https://docs.djangoproject.com/en/3.2/) - To learn how to add static image files, send emails and check fields when adding data models.
+- [Django Docs](https://docs.djangoproject.com/en/3.2/) 
+- [Cory Shaefer Django tutorial series](https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p)
 - [Academind Bootstrap Tutorial Series](https://www.youtube.com/watch?v=7g8Gg2QVdeU&list=PL55RiY5tL51rLqH4-8LBVlUTIFF70dxhb)
+- [LucidChart Tutorials](https://www.youtube.com/watch?v=-CuY5ADwn24)
 
-**For help with the creation of the 2 additional models in my database, (Newsletter and Contact features), I used:**
--[Just Django - YouTube tutorial](https://www.youtube.com/watch?v=2KeV42YaPes)
+**Resources for 2 additional models, Newsletter and Contact features:**
+- [Just Django - YouTube tutorial](https://www.youtube.com/watch?v=2KeV42YaPes)
+- [Tech with Tim Python Django Tutorial Series](https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9&index=1)
+- [Codemy.com YouTube tutorial](https://www.youtube.com/watch?v=xNqnHmXIuzU)
 
-- [Stack Overflow](https://stackoverflow.com/) - For troubleshooting
-- [Tech with Tim Python Django Tutorial Series](https://www.youtube.com/watch?v=Z4D3M-NSN58&list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9&index=1) - For additional research on Django I followed a YouTube Django Python tutorial series
-- [LucidChart Tutorials](https://www.youtube.com/watch?v=-CuY5ADwn24) - A series of 2 tutorials on Entity Relationship Diagrams.
 
-**Code Institute**
-- Dick Vlanderren - My Code Institute Mentor
-- [Slack](https://app.slack.com/) - Code institute support communinty
-- [Code Institute]() - Hello Django & Boutique Ado tutorials
 
-## Media
-All images have been provided by the business owner, Rachel Clayton.
-- [Unsplash](https://unsplash.com/)
 
-## Acknowledgements
-I received inspiration for ideas, colour palette and design of this project from: 
-- [pinterest](https://pinterest.com)
-- [current website trends](https://99designs.co.uk/blog/trends/web-design-trends/)
-- [dribbble](https://dribbble.com/shots/6492236-Balosto?utm_source=Pinterest_Shot&utm_campaign=Podavalkin&utm_content=Balosto&utm_medium=Social_Share).
-- [Jonathan Lawes](https://jonathanlawes.com/)
-- [Lucy Merriman](https://www.lucymerrimanart.com/)
-- [Georigia Elliott](https://www.georgiaelliottartist.com/)
+
