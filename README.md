@@ -20,11 +20,12 @@ This is a full stack project and uses a range of technologies including HTML, CS
 - [2.1 Site Structure](#21-Site-Structure)
 - [2.2 Database ER Diagram](#22-Database-ER-Diagram)
 - [3. Features](#3-Features)
-- [4. Technologies Used](#4-Technologies-used)
-- [5. Credits](#5-Credits)
+- [4. Deployment](#4-Deployment)
+- [5. Technologies Used](#5-Technologies-used)
+- [6. Credits](#6-Credits)
 
-Testing and Deployment can be found in a separate file:
-[Testing & Deployment]()
+Testing for the site can be found in a separate file:
+[Testing](https://github.com/RoxJade/rachel-clayton/blob/master/TESTING.md)
 
 Wireframes can also be found in a separate file:
 [Wireframes](https://github.com/RoxJade/rachel-clayton/blob/master/wireframes.md)
@@ -32,39 +33,19 @@ Wireframes can also be found in a separate file:
 # 1. UX
 
 ## 1.1 Target Audience
+The site is aimed towards art lovers who have an appreciation for abstract art, design and print. It's likely that the audience will be above the age of 25 and earning a reasonable wage, to afford the artwork. 
+In most cases the audience will be visiting the site to find 1-2 art pieces. The audience will be looking for a unique and original, hand printed design that makes a statement within their interior.
+The audience will value the orignality and authenticity of their artwork, rather than a reproduction or imitation.
 
 ## 1.2 User Stories
 
-**User Stories**
- - As a user, I would like to be able to navigate around the site easily, with quick access to the shop and gallery.
- - As a user, I would like to be able to search for prints with particular colours or patterns to suit my taste. 
- - As a user, I would like to stay informed and updated about the designer's newest pieces and exhibitions by signing up to an email or newsletter.
- - As a user, I may be interested in requesting a private commission or getting in contact with the designer to ask questions. 
- - As a user, I would like to view the individual products/print designs and information about them such as, a brief description, price and their dimensions.
- - As a user, I want to be a able to loacte and access the designer's social media account so I can follow them.
- - As a consumer, I would like to be able to create my own private account on the site for purchasing products.
- - As a consumer, I would like to know information about delivery and shipping of the prints. 
-**Returning User Stories**
- - As a returning consumer, I would like to access my personal account and be able to view my previous purchase history.
- - within my personal account, I would like to be able to add, edit and delete my personal information. 
- - As a returning consumer, I would like to know how to return my order if I need to.
-**User Stories - Functionality**
- - As a user, I want the design of the site to be aesthetically appealing with clear navigation and a sense of calm and colour.
- - As a user, I expect the site, payment system and my profile to be safe and secure. 
- - As a user, I want the site to be responsive, for mobile, tablet and desktop.
+<img alt=user_stories src="readme-images/user_stories.png" width=100%>
 
 ## 1.3 Business Goals
 Rachel would like to showcase herself as an independent professional designer, specialising in screen printing. 
 She would like a gallery to display her designs and the opportunity to sell them and make a profit. 
 Each print is screen-printed by hand in Rachel's UK-based studio and therefore, unique and individual. 
-
-**Business Owner Stories**
- - As the business owner, I would like a minimalistic approach to site design so the print designs are the focal point.
- - As the business owner, I would like to appeal to possible project collaborations with other designers. 
- - As the business owner, I would like my brand to communicate as a professional, independent designer.
- - As the business owner, I would like to be shown how to add, edit and remove products and their information in order to maintain the site independently, once created.
- - As the business owner, I would like to receive email confirmations of customer orders.
- - As the business owner, I would like to be shown how to view and manage customer orders. 
+I would like my brand to communicate as a professional, independent designer.
 
 ## 1.4 Design
 
@@ -98,20 +79,112 @@ The wireframe became quite large so I have created a separate file for these, li
 
 # 3. Features
 
-# 4. Technologies Used
+# 4. Deployment
 
-- Balsamiq
+1. I created and named my new app on Heroku.
+
+2. Going back to Gitpod: 
+    - I installed **dj_database_url** and **psycopg2-binary** with these commands in the terminal: 
+        - `pip3 install dj_database_url`
+        - `pip3 install psycopg2-binary`
+    - I added these packages to my requirements file with `pip3 freeze -- local > requirements.txt.`
+    - Then pushed them to my GitHub repository.
+
+3. Preparing to setup database:
+    - I dumped my Categories and Products data into json files with the following commanads:
+    - `python3 manage.py dumpdata products.Category > categories.json, python3 manage.py dumpdata products.Product > products.json`
+
+3. Back in Heroku:
+    - In the resources tab, I selected the **postgres database**. 
+    - This generated the **DATABASE_URL** which can be found in the config vars, which I later added to **settings.py**.
+
+4. In Gitpod, settings.py file:
+    - I imported dj_database_url into my settings.py with `import dj_database_url`
+    - Then 'commented-out' the default Django database settings and added the Heroku Postgres **DATABASE_URL**:
+    ```
+    DATABASES = {
+        'default': dj_database_url.parse("<DATABASE_URL here>")
+    }
+    ```
+5. In the Gitpod terminal:
+    - I ran migrations to create the models for my database with: 
+        - `python3 manage.py makemigrations`
+        - `python3 manage.py migrate`
+    - Then loaded the data fixtures into the categories and products model (in that specific order) with:
+        - `python3 manage.py loaddata categories`
+        - `python3 manage.py loaddata products`
+    - I created a superuser for the main site with `python3 manage.py createsuperuser`
+
+6. In settings.py, **before committing**, I made sure to 'uncomment' the default Django database settings and **remove the DATABASE_URL** to prevent it from saving to version control and created an if/else conditions for when to use each database:
+``` if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    } 
+``` 
+
+7. Back in the Gitpod terminal:
+    - I installed **gunicorn** with `pip3 install gunicorn`
+    - Added it to my **requirements.txt**
+    - I created a Procfile with the following text: `web: gunicorn <name app>.wsgi:application` for the gunicorn server.
+    - I **disabled 'collectstatic'** using `heroku config:set DIABLE_COLLECTSTATIC=1 --app rachel-clayton` to prevent Heroku from collecting the static files upon deployment.
+
+8. In settings.py I added: `ALLOWED_HOSTS = ['rachel-clayton.herokuapp.com', 'locahost']` to allow access to the Heroku site.
+    - I then pushed the changes to GitHub and to Heroku using: 
+        - `heroku git:remote -a rachel-clayton`
+        - `git push heroku master`
+
+9. Connecting Heroku to GitHub 
+    - On the deploy tab in Heroku, I clicked **Connect to GitHub** as my deployment method and searched for my repository to **connect** with it. 
+    - I then selected **Automatic deployments** so my the changes I make in development are pushed to Heroku as well.
+
+10. I added all keys and values to the Heroku config vars needed for the project to run, **replacing two keys** that were in my version control commits. These were:
+    - Django SECRET_KEY, which I replaced in settings.py with: `SECRET_KEY = os.environ.get('SECRET_KEY', '')`
+    - EMAIL_HOST_PASS (committing this one to version control was an accident!)
+
+    | KEY            | VALUE         |
+    |----------------|---------------|
+    | AWS_ACCESS_KEY_ID | `<aws access key>`  |
+    | AWS_SECRET_ACCESS_KEY | `<aws secret access key>`  |
+    | DATABASE_URL| `<postgres database url>`  |
+    | EMAIL_HOST_PASS | `<email password(generated by Gmail)>` |
+    | EMAIL_HOST_USER| `<email address>`  |
+    | MAILCHIMP_API_KEY| `<api key>`  |
+    | MAILCHIMP_DATA_CENTER| `<datacenter id>`  |
+    | MAILCHIMP_EMAIL_LIST_ID| `<emailist id>`  |
+    | SECRET_KEY | `<secret key>`  |
+    | STRIPE_PUBLIC_KEY| `<stripe public key>`  |
+    | STRIPE_SECRET_KEY| `<stripe secret key>`  |
+    | STRIPE_WH_SECRET| `<stripe wh key>`  |
+    | USE_AWS | `True`  |
+    
+11. Finally, I added a condition to debug, only in development with: `DEBUG = 'DEVELOPMENT' in os.environ`. 
+
+## Hosting static and media files with AWS
+All of my static and media files are hosted in the AWS S3 Bucket. To do this, I created an S3 bucket, set a group, policy and user in the IAM environment. Then loaded all of my media files and static files into it. 
+
+# 5. Technologies Used
+
+- [Balsamiq](https://balsamiq.com/) for [wireframes](https://github.com/RoxJade/rachel-clayton/blob/master/wireframes.md) 
 - [Lucid Chart](https://www.lucidchart.com/) to create Database ER diaram and site structure.
-- [SQLite 3]() Django built-in database during development.
-- [Django]() Django python web development framework.
+- [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) for logo design, font selections and colour.
+- [Django](https://www.djangoproject.com/) Django python web development framework.
+- SQLite 3 Django default built-in database during development.
 - Django Allauth - Built-in package from Django that handles full user authentication for the site.
-- Pillow - to use ImageField in Django database
-- [Gunicorn] Web server upon deployment
+- Pillow - to use 'ImageField' in Django database
+- gunicorn - web server upon deployment
+- dj_database_url - to change to Postgres database for deployment.
 - [Postgres] Database used upon deployemnt
 ?- [Jinja Templating](https://jinja.palletsprojects.com/en/2.11.x/) Python templating language used.
 - [Font Awesome]() For all site icons
 - [Stripe Payment]()
-- [Amazon Web Services]() - AWS bucket for static file storage
+- [Amazon Web Services](https://aws.amazon.com/) - AWS S3 bucket for media and static file storage.
 - [Mailchimp](https://mailchimp.com/) API used to setup Newsletter subcription feature.
 - [Gitpod and Github](https://github.com/RoxJade/) for version control.
 - [Heroku](https://www.heroku.com/home) Site is deployed on Heroku platform.
@@ -120,10 +193,10 @@ The wireframe became quite large so I have created a separate file for these, li
 - HTML
 - CSS
 - [Google fonts](https://fonts.google.com/) and [Google icons](https://fonts.google.com/icons). 
-- [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html) Used for the logo design and mockups.
 
 
-# 5. Credits
+
+# 6. Credits
 
 **For hints, help, guidance and small bug fixes I used:**
 - [Code Grepper](https://www.codegrepper.com/)
