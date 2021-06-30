@@ -87,6 +87,31 @@ The wireframe file is large so I have created a separate file for these, linked 
 
 # 3. Features
 
+A list of some of the main features within the site:
+
+- A selection of 20 print designs, created by Rachel to appear as a gallery or grid within the site.
+
+- A filter system in the site navigation links that returns specific sizes and types of artwork.
+
+- An email subscription mailing list, using MailChimp, providing users to leave their email address, which gets saved to the user subscription list within MailChimp. From there, Rachel can send marketing emails to her subscribers.
+    
+- A completely styled admin interface for the store manager to be able to add, edit, remove products, change details and upload images, allowing Rachel full control over managing her new products and adding new lines.
+
+- A fully functioning payment system to purchase Rachel's artwork. The ability to purchase products form the site using the Stripe payment system, which takes payments for the products and processes them.
+    - **Purchase using test card number: 4242 4242 4242 4242 (any numbers can be entered for YY/MM CVC)**
+
+- Include's the calculation UK VAT of 20% that must be applied to each of Rachel's print's for purchase.
+
+- Customer's who have placed orders will receive a confirmation email detailing their order.
+
+- A contact form built into the contact page to allow for customers, collaborators and commission requests to be sent directly to Rachel's email address (this is currently registered to my email address for testing purposes.)
+
+- Full user authentication (register/login/sign in/email verification), for personal profile/account to hold delivery information and purchase history. 
+
+- A range of messages to pop-up on the site and return specialised responses based on user interaction.
+
+- Delivery, shipping and returns information to inform customers who plan to or have purchased a print.
+
 # 4. Deployment
 
 1. I created and named my new app on Heroku.

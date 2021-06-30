@@ -161,50 +161,99 @@ Chcekout and checkout success forms, features, messages, buttons, web handlers a
 --------------------
 
 # 2. User Stories Testing
+
 ## 2.1 Viewing and Navigation
 
-### **1. Navigate around the site easily, with quick access to the shop and range of prints/art.**
+**1. Navigate around the site easily, with quick access to the shop and range of prints/art.**
 - A user can navigate around the site using the main navbar and conveniently placed links. The navbar collapses into a 'hamburger' icon at medium screen breakpoint for mobile and tablet users.
 
-
-
-
 **2. View a selection of the artwork to potentially purchase.**
--  
-3. Search or filter by artwork sizes to fit a particular wall space. 
+-  users can navigate to the 'collections' and find all artwork within those links, they can also access it via the 'All Prints' button on the homepage
+
+**3. Search or filter by artwork sizes to fit a particular wall space.**
+- users can navigate to the 'collections' link in the navbar and view the drop-down links, these links filter the artwork by size and type.
+
 4. View the individual products/print designs and information about them such as, a brief description, price, dimensions and whether it’s in stock.
+- users can view the individual artwork by clicking on any individual artwork image within the collections. There, they will see all of the details about the item they are interested in.
+
 5. View a larger version of the individual artwork they’re interested in.
+- when users view an individual print, they can click on the image. This will enhance the size of the image. 
+
 6. Get in contact with the designer to ask general questions, request possible collaborations or discuss a commission. 
+- users can get in contact with the designer by navigating to the contact page. There, they will find a contact form, upon submitting the form, Rachel will receive the recipients messages.(These are currently directed at my email address for testing purposes.)
+
 7. Locate and access the designer's social media account so I can follow them.
+- all of Rachel's social media links can be found along the bottom of the site, in the footer. These include links to her Facebook, Instagram, LinkedIn and Pinterest.
+
 8. Locate and read information about the designer and her background within her artistic discipline.
+- users can locate information about Rachel and her artistic background in the about section on her contact page.
+
 9. Stay informed and updated about the designer's newest collections and exhibitions by signing up to an email or newsletter.
+- users can subscribe to the mailing list which can be found on the homepage of the site. Once users are subscribed, Rachel will have access to the subscriber list on Mail Chimp and can use this platform to compose and send marketing emails.
+
 **10. I want the site to be fully responsive, for mobile, tablet and desktop.**
 - The site is fully responsive across all screen sizes, including a variation of mobile phone screen sizes, tablet screens, laptop and large desktop screens. I created an additional media query for smaller mobile screen sizes as well as larger mobile screen sizes.
 
-**Test Passed**
 11. Locate and read information about delivery and shipping of the prints.
-12. See message confirmation pop-ups to feel reassured when I make purchases, subscribe to the newsletter and send a message through the contact form. 
+- delivery, shipping and returns information can all be found in the delivery and returns page under the contact link.
+
+12. See message confirmation pop-ups to feel reassured when I make purchases, subscribe to the newsletter and send a message through the contact form.
+- the site has a selection of message pop-ups, these include success, error, alert and info messages. Different messages will be triggered based on user interaction.
 
 ## 2.2 Purchasing and Checkout
 13. Easily view the total of their purchases at anytime and the VAT added to the cost to be clear on how much they will be spending. 
+- customers will be able to view the running total in the navbar below the bag icon in the far corner
+- they will also receive a success message, detailing the VAT to be added to the total cost
+
 14. Adjust the quantity of the items in my bag
+- users can adjust the quantity of items in the bag and in the Checkout
+- the individual quantity of the items will not succeed 10
+
 15. Easily enter my details and payment information
+- the stripe payment process is fairly straightforward, the form is easy to populate, with placeholder hints in the form fields
+- the form also has an option 'check box' to save the users delivery information to their account and reuse for future purchases, making the experience even quicker second time around.
+
 16. I expect the site, payment system and my profile to be safe and secure. 
+- The transactions require Stripe, a secure payment service.
+
 17. View my order confirmation after making a purchase
+- upon making a purchase, a customer will be shown their order confirmation.
+- an order confirmation will also be sent to you that email address
+- They will also be able to view their order history in the user profile account.
+
 18. Receive email confirmations of my orders.
+- users will receive an email confirmation of the order.
 
 ## 2.3 User Profile, Registration and Authentication
+
 19. Easily register for an account
+- users can easily register for an account on the register page, the form is straightforward with hints in the placeholders.
+
 20. Easily log in and out of my account
+- users can easily log in and out by accessing the profile icon in the navbar and choose 'sign in' or 'log out'.
+
 21. Receive an email confirmation after registering my account verifying that my account registration was successful
+- upon registering for a new account, users will receive an email requesting them to verify their email address.
+
 22. Update, edit and delete my personal information. 
+- within each user account, the user can update edit and delete their personal information.
+
 23. View my previous purchase history within my account.
+- users can view their previous purchase history within their user profile account.
 
 # 2.4 Business Owner User Stories
 24. I would like a minimalistic approach to site design so the print designs are the focal point.
+- the site design is fairly minimal, using plenty of white space, a calm font style and calmer accent tones, with the majority of focus on the beautiful print designs.
+
 25. I would like to be shown how to add, edit and remove products and their information in order to maintain the site independently.
+- as a registered super user, Rachel will have access to the product management link, where she will be able to add, edit and remove her products and all of their information, including images.
+
 26. I would like the cost of UK VAT (value added tax) added to the total of the product for tax purposes.
+- The equation to calulate UK VAT of 20%, has been added to the grand total sum of each customer spend and can be seen in the bag and checkout pages.
+
 27. I would like the total cost VAT to be displayed separately as well as included in the final cost total to shoppers can easily identify how much VAT they will paying.
+- the total cost of the VAT, before it is added to the grand total, is shown in the bag and at the checkout.
+
 28. I would like customer messages, (sent from contact form), to be forwarded to my email address so I can be conveniently notified.
 
 # 3. Responsive Testing
