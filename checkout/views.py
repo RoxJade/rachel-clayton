@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -97,7 +98,7 @@ def checkout(request):
         )
 
     # Attempt to prefill the form with info the user maintains in their profile
-    
+
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)

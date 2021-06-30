@@ -255,12 +255,97 @@ Chcekout and checkout success forms, features, messages, buttons, web handlers a
 - the total cost of the VAT, before it is added to the grand total, is shown in the bag and at the checkout.
 
 28. I would like customer messages, (sent from contact form), to be forwarded to my email address so I can be conveniently notified.
+- all customer messages are forwarded onto Rachels email address. (My address is currently being used for this for tests.)
+
+-------------------
 
 # 3. Responsive Testing
 
+To maintain a responsive approach during the development of my site, I used the Chrome Dev tools and checked the responsiveness against the following devices with different screen sizes:
+
+- Moto-G4 
+- iPhone 5/SE
+- iPhone 6/7/8
+- iPhone 6/7/8 +
+- iPhone X
+- iPad 
+- iPad Pro
+- Pixel 2
+- Pixel 2 XL
+- Surface Duo
+
+During this process I realised I that the Boostrap built-in class of 'small' breakpoint, was not small enough to support some of the smallest screen sizes such as iPhone 5 and Moto-G4.
+For this reason I added an additional breakpoint for 'very small screen sizes to my CSS. 
+I tried to primarily use Bootstrap classes and grid system to control the responsiveness of the site, but at times, I needed to add tweaks to CSS. 
+Below are some examples of my site on a variety of screen sizes:
+
+<img alt=moto-g4 before src="readme-images/testing-images/resp-moto-g4.png" width=20%>
+
+<img alt=iphone-se before src="readme-images/testing-images/resp-iphonese.png" width=21%>
+
+<img alt=iphone-se-2 before src="readme-images/testing-images/resp-iphonse2.png" width=20%>
+
+<hr>
+<img alt=lighthouse before src="readme-images/testing-images/resp-ipad.png" width=50%>
+<hr>
+<img alt=lighthouse before src="readme-images/testing-images/resp-prints.png" width=100%>
+<img alt=lighthouse before src="readme-images/testing-images/resp-forms.png" width=100%>
+
 # 4. Automated Testing
 
+## Lighthouse 
+The original score that Lighthouse gave my website was a bit low, in particular, I wasn't very pleased with the Performance.
+I read through the lighthouse report and followed some of the advice, amending and removing any unecessary HTML and CSS based on Lighthouse's report. 
+After running my code for the second time through in Lighthouse, I saw a bigger improvement in the performance. In the future, I'd like to figure out how to improve this even further. 
+
+<img alt=lighthouse before src="readme-images/testing-images/lighthouse-before.png" width=100%>
+<hr>
+<img alt=lighthouse before src="readme-images/testing-images/lighthouse-after.png" width=75%>
+
+## HTML
+
+[W3 Validator](https://validator.w3.org/)
+- with the exception of some minor errors, such as removing 'alt' attributes from the wrong location and warnings the sections lack headings, the HTML didn't conatin any significant errors.
+
+**Test Passed**
+
+## Python
+
+[PEP8](http://pep8online.com/)
+- With the exception of a lines too long that I missed when I refactored my code, there were no significant errors found.
+
+**Test Passed**
+
+## javascript
+
+[JS Hint](https://jshint.com/)
+- No serious errors. Issued some warnings below:
+'template literal syntax' is only available in ES6 (use 'esversion: 6')
+'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+**Test Passed**
+
+## CSS
+
+[CSS Validator Jigsaw](https://jigsaw.w3.org/css-validator/validator)
+- Found No errors in the CSS file! 
+
+**Test Passed**
+
 # 5. Browser Testing
+
+Browsers are used for testing included:
+
+- Google Chrome
+- Mozilla Firefox 
+- Microsoft Edge
+- Safari
+
+In all four web browsers, I did not have problem, accessing any part of my site, nor had it changed or altered in any way.
+Testing in these sites was very successful
+
+Results: 
+**Test Passed**
 
 # 6. Development and Problem Solving and Bugs
 
@@ -333,10 +418,10 @@ After deployment, I realised a site user could still add a 'sold' item to their 
 
 **Stripe Issues**
 
-    - I found adding Stipe to the project fairly straight forward, with one exception. After stopping the Gitpod workspace for a while and re-opening, some of the '£' signs in the chcekout and bag views had changed to '$' signs. I checked I had set my currency on Stripe to GBP, which was correct. 
+- I found adding Stipe to the project fairly straight forward, with one exception. After stopping the Gitpod workspace for a while and re-opening, some of the '£' signs in the chcekout and bag views had changed to '$' signs. I checked I had set my currency on Stripe to GBP, which was correct. 
     Once I changed these back in the HTML tenplates, this solved the issue and has not occurred since, however, I did find there were some occurrences of it happeneing to other users on the Slack Community and it was suggested the issue stems from Stripe.
 
-    - I used Crispy forms to create and validate the all of the forms in the site. I appreciated the time it saved with minimal styling needed and the validation completely handled. 
+- I used Crispy forms to create and validate the all of the forms in the site. I appreciated the time it saved with minimal styling needed and the validation completely handled. 
     On the checkout page however, the field for country would not allow users to enter 'UK', it has to be 'GB'. This was not quite as user-friendly as I would have liked, it's something I'd like to alter in the future. For now, I added a small sentence in the placeholder to inform users to use GB instead UK.
 
 ----------
