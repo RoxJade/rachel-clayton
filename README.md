@@ -87,7 +87,7 @@ The wireframe file is large so I have created a separate file for these, linked 
 
 # 3. Features
 
-A list of some of the main features within the site:
+## A list of some of the main features within the site:
 
 - A selection of 20 print designs, created by Rachel to appear as a gallery or grid within the site.
 
@@ -111,6 +111,15 @@ A list of some of the main features within the site:
 - A range of messages to pop-up on the site and return specialised responses based on user interaction.
 
 - Delivery, shipping and returns information to inform customers who plan to or have purchased a print.
+
+## Future Scope for Development:
+
+Areas of the project I'd like to improve on and develop:
+
+- There are still tweaks to be made to the site, design features and layouts I feel I can improve.
+- in the future I would like to add a customer gallery, where customers can unload their own photos of Rachel's purchased artwork, possibly with a review section.
+- I would also like to build more sections that could be useful for Rachel, as the business owner it would be great if she could have a styled admin where she manage customer orders, as well products.
+- Eventually Rachel would like to start posting her work out to countries other than the UK. Therefore I could look into adding some payment functionality to support this.
 
 # 4. Deployment
 
